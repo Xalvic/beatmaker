@@ -38,6 +38,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            
             align-items: center;
             height: 100%;
             font-family: 'Montserrat';
@@ -51,15 +52,25 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+            flex-shrink: 0;
             width: 8rem;
             font-size: 1.5rem;
             margin: 5px 0px;
-            padding: 1.2rem 2rem;
+            padding: 2.5rem 2.5rem;
             color: rgba(40, 42, 48, 0.705);
             cursor: grab;
             /* box-shadow: 0 0 0.8px rgb(0, 0, 0); */
             transition: all 0.1s;
+        }
+        .key:active {
+            transform: scale(.95);
+            opacity: 0.7;
+            box-shadow: 0 0 1px rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        .ins {
+            display: flex;
+            font-size: 12px;
         }
                                     .crash1 {
                                         background-color: #ffd013;
@@ -109,34 +120,46 @@
             @media only screen and (max-width: 1200px) {
                 .key {
                         width: 6rem;
-                        font-size: 1rem;
                         margin: 10px 0px;
                         padding: 2rem 2rem;
         }
             }
-            @media only screen and (max-width: 1023px) {
+            @media only screen and (max-width: 1024px) {
                 .key {
-                        width: 6rem;
-                        font-size: 1rem;
-                        margin: 10px 0px;
-                        padding: 2rem 2rem;
+                    width: 8rem;
+                    font-size: 1.5rem;
+                    margin: 5px 0px;
+                    padding: 2.5rem 2.5rem;
         }
             }
             @media only screen and (max-width: 768px) {
                 .key {
                         width: 8rem;
-                        font-size: 1rem;
-                        margin: 10px 0px;
+                        margin: 5px 0px;
                         padding: 2rem 2rem;
+        }
+            }
+            @media only screen and (max-width: 640px) {
+                .key {
+                        width: 4rem;
+                        margin: 5px 0px;
+                        padding: 1rem 1rem;
+        }  
+        h1 {
+            letter-spacing: 3px;
+            word-spacing: 3px;
+            font-size: 30px;
         }
             }
             @media only screen and (max-width: 500px) {
                 .key {
                         width: 4rem;
-                        font-size: .5rem;
                         margin: 5px 0px;
                         padding: 1rem 1rem;
         }  
+        .ins {
+            font-size: 10px;
+        }
         h1 {
             letter-spacing: 3px;
             word-spacing: 3px;
