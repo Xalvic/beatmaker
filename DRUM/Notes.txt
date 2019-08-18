@@ -1,0 +1,10 @@
+crash	lite crash      lite Ride       Ride bell
+
+	
+hi tom	Mid tom	      lo tom         floor tom
+
+
+snare rim     snare 2         open hithat    pedal hithat
+
+
+sidekick    kick 1     closed hat      kick 2
